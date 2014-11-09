@@ -2,10 +2,13 @@
   "name": "sandbox",
   "version": "1.0.0",
   "description": "kadoppe's sandbox",
-  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
+  "engine": {
+    "node": "v0.10.x",
+    "npm": "1.4.x"
+  }
   "author": "Kohei Kadowaki (kadoppe)",
   "license": "ISC",
   "dependencies": {
