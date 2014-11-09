@@ -9,6 +9,7 @@
   "author": "Kohei Kadowaki (kadoppe)",
   "license": "ISC",
   "dependencies": {
-    "jade": "^1.7.0"
+    "jade": "^1.7.0",
+    "morgan": "^1.5.0"
   }
 }
