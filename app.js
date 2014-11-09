@@ -1,13 +1,11 @@
 var express = require('express');
 var app = express();
 
+app.set('view engine', 'jade');
+app.set('views', __dirname + '/views');
+
 app.get('/', function (req, res) {
-  res.send('this is my sandbox');
+  res.render('index', { title: "kadoppe's sandbox" });
 });
 
-var server = app.listen(3000, function () {
-  var host = server.address().address;
-  var port = server.address().port;
-
-  console.log('Sandbox app listening at http://%s:%s', host, port);
-});
+var server = app.listen(3000);
